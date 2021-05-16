@@ -139,9 +139,9 @@ const WorkingExperience = () => {
             align="center"
             className={classes.subtitle1}
           >
-            J'ai effectué mon stage en tant que développeur fullstack sur le logiciel Interneo developpé par l'entrerprise. 
-            J'y ai acquis de l'expérience dans la programmation de sites web avec React.js ainsi que dans l'utilisation de la librairie Redux.js
-            et dans la programmation de backend avec Symfony PHP.
+            I completed my internship as a junior developper on the Interneo software developped by Opal Solutions.
+            During this internship, I gained experience in website programming with React.js framework as well as in using Redux.js library
+            and in the backend programmation using PHP Symfony.
           </Typography>
         </Box>
         <Typography
