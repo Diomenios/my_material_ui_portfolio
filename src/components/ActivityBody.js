@@ -24,7 +24,7 @@ const ActivityBody = (props) => {
   const classes = useStyles();
 
   return (
-    <Container className={classes.mainContainer}>
+    <Container name={props.title} className={classes.mainContainer}>
       <Typography className={classes.title} variant="h3" align="center" gutterBottom> 
         {props.title} 
       </Typography>

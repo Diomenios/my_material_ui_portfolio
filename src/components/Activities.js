@@ -24,10 +24,10 @@ const Activities = (props) => {
   const renderGridBody = (gridParts) => {
 
     return gridParts.map((part, index) => {
-      const imgGrid = <Grid className={classes.text2} alignContent='center' item xs={6}>
+      const imgGrid = <Grid key={part.alt} className={classes.text2} item xs={6}>
         <img className={classes.image} src={part.img} alt={part.alt}/>
       </Grid>
-      const textGrid = <Grid className={classes.text} item xs={6}>
+      const textGrid = <Grid key={part.title} className={classes.text} item xs={6}>
         <ActivityBody
           title={part.title}
           description={part.description}

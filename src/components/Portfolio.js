@@ -10,6 +10,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import Modal from '@material-ui/core/Modal';
+import { Link } from 'react-scroll'
 import ModalTable from './ModalTable';
 import Activities from './Activities'
 
@@ -148,24 +149,30 @@ const AboutMe = () => {
           <Grid item xs={12} sm={8} md={4} key={i}>
             <Card className={classes.cardContainer}>
               <CardActionArea>
-                <CardMedia
-                  component="img"
-                  alt="Project 1"
-                  height="140"
-                  image={project.image}
-                />
-                <CardContent>
-                  <Typography variant="h5" gutterBottom>
-                    {project.name}
-                  </Typography>
-                  <Typography variant="body2" color="textSecondary">
-                    {project.description}
-                    {project.name === projects[3].name || project.name === projects[2].name ? 
-                      <a href={project.name === projects[3].name ? 'https://github.com/Diomenios/game_jam_3.0' : 'https://louvainlinux.org/'}> link. </a> :  
-                      undefined
-                    }
-                  </Typography>
-                </CardContent>
+                <Link to={project.name} spy={true} smooth={true} duration={500}>
+                  <CardMedia
+                    component="img"
+                    alt="Project 1"
+                    height="140"
+                    image={project.image}
+                  />
+                </Link>
+                  <CardContent>
+                    <Link to={project.name} spy={true} smooth={true} duration={500}>
+                      <Typography variant="h5" gutterBottom>
+                        {project.name}
+                      </Typography>
+                    </Link>
+                    <Typography variant="body2" color="textSecondary">
+                      <Link to={project.name} spy={true} smooth={true} duration={500}>
+                        {project.description}
+                      </Link>
+                      {project.name === projects[3].name || project.name === projects[2].name ? 
+                        <a href={project.name === projects[3].name ? 'https://github.com/Diomenios/game_jam_3.0' : 'https://louvainlinux.org/'}> link. </a> :  
+                        undefined
+                      }
+                    </Typography>
+                  </CardContent>
               </CardActionArea>
               <CardActions className={classes.cardAction} onClick={openModal}>
                 <Button size="small" color="primary">
