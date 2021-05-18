@@ -4,6 +4,7 @@ import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import GetApp from "@material-ui/icons/GetApp";
+import cv from '../assets/CV.pdf'
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
@@ -31,7 +32,6 @@ const useStyles = makeStyles((theme) => ({
     color: "tomato",
   },
 }));
-const DOWNLOAD_URL = "../../public/CV.pdf"
 
 const PersonnalDescription = (props) => {
   const classes = useStyles();
@@ -50,7 +50,7 @@ const PersonnalDescription = (props) => {
         endIcon={<GetApp />}
         className={classes.button}
       >
-        <a className={classes.href} href={DOWNLOAD_URL} download> Download my CV </a>
+        <a className={classes.href} href={cv} target="_blank" download > Download my CV </a>
       </Button>
     </Container>
   );

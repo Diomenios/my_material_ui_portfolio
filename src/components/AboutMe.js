@@ -79,7 +79,7 @@ const AboutMe = () => {
     <Box component="div" className={classes.mainContainer}>
       <Grid container spacing={3}>
         <Grid item xs={6}>
-          <img className={classes.image} src={me}/>
+          <img className={classes.image} src={me} alt={"Me"}/>
         </Grid>
         <Grid item xs={6}>
           <PersonnalDescription
@@ -94,7 +94,7 @@ const AboutMe = () => {
           />
         </Grid>
         <Grid item xs={6}>
-          <img className={classes.image} src={developper}/>
+          <img className={classes.image} src={developper} alt={"Developper"}/>
         </Grid>
         <Grid className={classes.skills} item xs={12}>
           <SkillsGenerator
