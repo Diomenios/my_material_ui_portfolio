@@ -40,7 +40,7 @@ const ActivityBody = (props) => {
       <Typography className={classes.description} variant="body1" align="left" gutterBottom> 
         {props.analysis}
         {props.addLink ? 
-          <a href={'https://github.com/Diomenios/game_jam_3.0'}> link. </a> :  
+          <a href={'https://github.com/Diomenios/game_jam_3.0'} target="_blank" rel="noopener noreferrer"> link. </a> :  
           undefined
         }
       </Typography>

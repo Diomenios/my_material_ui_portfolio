@@ -17,11 +17,8 @@ import AssignmentInd from "@material-ui/icons/AssignmentInd";
 import Home from "@material-ui/icons/Home";
 import AccountBox from "@material-ui/icons/AccountBox";
 import Apps from "@material-ui/icons/Apps";
-import ContactMail from "@material-ui/icons/ContactMail";
 import { makeStyles } from "@material-ui/core/styles";
 import avatar from "../avatar.png";
-
-import Footer from "../components/Footer";
 
 const useStyles = makeStyles((theme) => ({
   appbar: {
@@ -55,7 +52,6 @@ const menuItems = [
   { listIcon: <AccountBox />, listText: "About Me", listPath: "/about-me" },
   { listIcon: <AssignmentInd />, listText: "Working experience", listPath: "/working-experience" },
   { listIcon: <Apps />, listText: "Portfolio", listPath: "/portfolio" },
-  { listIcon: <ContactMail />, listText: "Contact", listPath: "/contact" }
 ];
 
 const Navbar = () => {
@@ -103,7 +99,6 @@ const Navbar = () => {
       </Box>
       <Drawer open={open} anchor="right" onClose={() => setOpen(false)}>
         {sideList()}
-        <Footer />
       </Drawer>
     </React.Fragment>
   );

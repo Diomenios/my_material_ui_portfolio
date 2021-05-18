@@ -70,9 +70,10 @@ const projects = [
   },
   {
     name: "Louvain-li-Nux member",
-    description: `I have been a member of the Louvain-li-Nux KAP since september 2017 to june 2020. 
-      During this period, I gave lectures on Git, Gimp and Latex. I gave also help during informatics permanences during which 
-      I worked on Linux problems resolutions. Finally, I gave a workshop to teach Python to beginners. Curious about Louvain-li-Nux KAP ? Click on this `,
+    description: `I was a member of the Louvain-li-Nux KAP from september 2017 to june 2020. 
+      During this period, I gave lectures on Git, Gimp and Latex. I also helped during informatics permanences where 
+      I worked on Linux problems resolution. Finally, I gave a workshop to teach Python to beginners. Curious about 
+      Louvain-li-Nux KAP ? Click on this `,
     image: project3,
   },
   {
@@ -89,8 +90,8 @@ const gridData = [
     alt: 'React.js logo',
     title: projects[0].name,
     description: projects[0].description,
-    analysis: `I made this formation in order to be able to have capabilities to make my internship in Opal Solutions.
-      This help me to understand the React basis concepts like Component usage, or React Classes, ... These basis have
+    analysis: `I made this formation in order to have abilities to make my internship in Opal Solutions.
+      This helped me to understand the React basis concepts like Component usage, or React Classes, ... These basis have
       been very usefull to start my internship.`,
   },
   {
@@ -98,8 +99,8 @@ const gridData = [
     alt: 'Symfony logo',
     title: projects[1].name,
     description: projects[1].description,
-    analysis: `I made this formation in order to be able to have capabilities to make my internship in Opal Solutions.
-      This formation give me the basis to start with symfony as the concept of container of Services or the standart
+    analysis: `I made this formation in order to have abilities to make my internship in Opal Solutions.
+      this formation gave me the basis to start with symfony as the concept of container of Services or the standart
       library to use in order to make Unit Tests. These basis have been very usefull to start my internship.`,
   },
   {
@@ -107,25 +108,27 @@ const gridData = [
     alt: 'Louvain-li-Nux photo',
     title: projects[2].name,
     description: projects[2].description,
-    analysis: `During these 3 years of membership I learn a lot of things. The weekly meeting organize in order to
-      prepare the incomings events teach me teamwork and organization. We had to present our activities to a lot of
-      people and also we organized multiple workshops, so I had to improve my presentation skills. Every Monday
-      evening, we had an activity called 'Permanence' during which we repair physical or software problem of random people
-      coming for that. With these 'Permanence', I learned a lot about how Linux works and how to solve regular problems on it.
-      In conclusion, these 3 years teach me a lot of softs skills like communication, autonomy, teamwork, Open Source love, ...`,
+    analysis: `During these 3 years of membership I learnt a lot of things. The weekly meetings organized in order 
+      to prepare the incomings events taught me teamwork and organization. We had to present our activities to a 
+      lot of people and also we organized multiple workshops, so I had to improve my presentation skills. Every 
+      Monday evening, we had an activity called 'Permanence' during which we repaired physical or software problem 
+      of different people coming for that. With these 'Permanence', I learnt a lot about how Linux works and how to 
+      solve regular problems on it. In conclusion, these 3 years taught me a lot of soft skills like communication, 
+      autonomy, teamwork, Open Source love, ...`,
   },
   {
     img: project4,
     alt: 'Python logo',
     title: projects[3].name,
     description: projects[3].description,
-    analysis: `These 24 straight hours of work had been very funny. Success to make a game in only one day of work is very satisfying
-      and work hard on a project with multiple people is a good experience to have. For me it was the opportunity to code again
-      with python after more than a year of pause. It was a very good experience and a very good training. I don't have photo
-      as proof of my participation to this event but you can check-it on my github account with this `,
+    analysis: `These 24 straight hours of work were very funny. Success to make a game in only one day of work is 
+      very satisfying and working hard on a project with multiple people is a good experience to have. For me, it 
+      was the opportunity to code again with python after more than a year of pause. It was a very good experience 
+      and a very good training. I don't have pictures as proof of my participation to this event but you can check-it 
+      on my github account with this `,
     addLink: true,
   },
-]
+];
 
 const AboutMe = () => {
   const [open, setOpen] = useState(false);
@@ -168,7 +171,13 @@ const AboutMe = () => {
                         {project.description}
                       </Link>
                       {project.name === projects[3].name || project.name === projects[2].name ? 
-                        <a href={project.name === projects[3].name ? 'https://github.com/Diomenios/game_jam_3.0' : 'https://louvainlinux.org/'}> link. </a> :  
+                        <a 
+                          href={project.name === projects[3].name ? 'https://github.com/Diomenios/game_jam_3.0' : 'https://louvainlinux.org/'}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        > 
+                          link. 
+                        </a> :  
                         undefined
                       }
                     </Typography>

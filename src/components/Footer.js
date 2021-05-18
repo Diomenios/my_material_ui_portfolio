@@ -6,6 +6,9 @@ import Facebook from "@material-ui/icons/Facebook";
 import Twitter from "@material-ui/icons/Twitter";
 import Instagram from "@material-ui/icons/Instagram";
 
+/**
+ * Not use for the moment 
+ */
 const useStyles = makeStyles({
   bottomNavContainer: {
     background: "#222",

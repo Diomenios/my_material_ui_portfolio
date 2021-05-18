@@ -5,7 +5,6 @@ import Home from "./components";
 import WorkingExperience from "./components/WorkingExperience";
 import Navbar from "./components/Navbar";
 import Portfolio from "./components/Portfolio";
-import Contact from "./components/Contact";
 import AboutMe from "./components/AboutMe";
 
 import "./App.css";
@@ -19,7 +18,6 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route exact path="/working-experience" component={WorkingExperience} />
         <Route exact path="/portfolio" component={Portfolio} />
-        <Route exact path="/contact" component={Contact} />
         <Route exact path="/about-me" component={AboutMe} />
       </Switch>
     </React.Fragment>
