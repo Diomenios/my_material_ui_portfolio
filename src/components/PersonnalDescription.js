@@ -22,8 +22,8 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const PersonnalDescription = (props) => {
-
   const classes = useStyles();
+  
   return (
     <Container className={classes.mainContainer}>
       <Typography className={classes.title} variant="h2" gutterBottom> 
