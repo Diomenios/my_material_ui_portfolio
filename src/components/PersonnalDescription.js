@@ -2,6 +2,8 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
+import Button from "@material-ui/core/Button";
+import GetApp from "@material-ui/icons/GetApp";
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
@@ -17,13 +19,23 @@ const useStyles = makeStyles((theme) => ({
     margin: "10% 10% 5% 10%",
   },
   description: {
-    margin: "5% 10% 10% 10%",
+    margin: "5% 10% 20% 10%",
+  },
+  button: {
+    marginTop: "1rem",
+    color: "tomato",
+    borderColor: "tan",
+  },
+  href: {
+    textDecoration: "none",
+    color: "tomato",
   },
 }));
+const DOWNLOAD_URL = "lorem ipsum"
 
 const PersonnalDescription = (props) => {
   const classes = useStyles();
-  
+
   return (
     <Container className={classes.mainContainer}>
       <Typography className={classes.title} variant="h2" gutterBottom> 
@@ -32,6 +44,14 @@ const PersonnalDescription = (props) => {
       <Typography className={classes.description} variant="body1" gutterBottom> 
         {props.description} 
       </Typography>
+      <div className={"flex-fill"}/>
+      <Button
+        variant="outlined"
+        endIcon={<GetApp />}
+        className={classes.button}
+      >
+        <a className={classes.href} href={DOWNLOAD_URL} target='_blank'> Download my CV </a>
+      </Button>
     </Container>
   );
 };
