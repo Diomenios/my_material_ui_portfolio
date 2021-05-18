@@ -44,14 +44,16 @@ const PersonnalDescription = (props) => {
       <Typography className={classes.description} variant="body1" gutterBottom> 
         {props.description} 
       </Typography>
-      <div className={"flex-fill"}/>
-      <Button
-        variant="outlined"
-        endIcon={<GetApp />}
-        className={classes.button}
-      >
-        <a className={classes.href} href={cv} target="_blank" download > Download my CV </a>
-      </Button>
+      {props.addDownloadButton ? 
+        <Button
+          variant="outlined"
+          endIcon={<GetApp />}
+          className={classes.button}
+        >
+          <a className={classes.href} href={cv} download > Download my CV </a>
+        </Button> :
+        undefined
+      }
     </Container>
   );
 };

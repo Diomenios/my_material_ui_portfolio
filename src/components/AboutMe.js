@@ -23,11 +23,11 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const PERSONNAL_TITLE = "About me";
-const PERSONNAL_DESCRIPTION = "I'm a student in BAC 3 in Computing Technology at the EPHEC school in Louvain-la-Neuve. \
-  I chose to do computer science because i like to take on comlex challenges.";
+const PERSONNAL_DESCRIPTION = `I'm a student in BAC 3 in Computing Technology at the EPHEC school in Louvain-la-Neuve.
+  I chose to do computer science because i like to take on complex challenges.`;
 const PROFESSIONNAL_PROJECT_TITLE = "Professionnal project";
-const PROFESSIONNAL_PROJECT_DESCRIPTION = "I would like to work as a fullstack web developper, a software developper or as a DevOps.\
-  If I want to do these jobs it's because they will allow me to grow and develop my know-how, while allowing me to face various challenges.";
+const PROFESSIONNAL_PROJECT_DESCRIPTION = `I would like to work as a fullstack web developper, a software developper or as a DevOps.
+  If I want to do these jobs it's because they will allow me to grow and develop my know-how, while allowing me to face various challenges.`;
 const SKILLS_TITLE = "Skills";
 const skills = [
   {
@@ -85,6 +85,7 @@ const AboutMe = () => {
           <PersonnalDescription
             title={PERSONNAL_TITLE}
             description={PERSONNAL_DESCRIPTION}
+            addDownloadButton={true}
           />
         </Grid>
         <Grid item xs={6}>

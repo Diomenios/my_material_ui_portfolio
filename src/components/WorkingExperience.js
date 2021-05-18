@@ -139,7 +139,7 @@ const WorkingExperience = () => {
             align="center"
             className={classes.subtitle1}
           >
-            I completed my internship as a junior developper on the Interneo software developped by Opal Solutions.
+            I completed my internship as a junior developper working on the Interneo software developped by Opal Solutions.
             During this internship, I gained experience in website programming with React.js framework as well as in using Redux.js library
             and in the backend programmation using PHP Symfony.
           </Typography>
