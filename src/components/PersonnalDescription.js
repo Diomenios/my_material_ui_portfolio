@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
     color: "tomato",
   },
 }));
-const DOWNLOAD_URL = "lorem ipsum"
+const DOWNLOAD_URL = "../../public/CV.pdf"
 
 const PersonnalDescription = (props) => {
   const classes = useStyles();
@@ -50,7 +50,7 @@ const PersonnalDescription = (props) => {
         endIcon={<GetApp />}
         className={classes.button}
       >
-        <a className={classes.href} href={DOWNLOAD_URL} target='_blank'> Download my CV </a>
+        <a className={classes.href} href={DOWNLOAD_URL} download> Download my CV </a>
       </Button>
     </Container>
   );
