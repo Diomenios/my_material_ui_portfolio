@@ -36,9 +36,9 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
   },
   modalBody: {
-    width: '35%',
-    height: '52%',
-    transform: `translate(90%,50%)`,
+    width: '45%',
+    height: '65%',
+    transform: `translate(55%,35%)`,
     position: 'absolute',
     backgroundColor: '#711',
     border: '1px solid #000',
