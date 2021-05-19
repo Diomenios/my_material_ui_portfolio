@@ -16,6 +16,9 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: "3%",
     paddingBottom: "3%",
   },
+  href: {
+    color: "tomato",
+  },
 }));
 const FIRST_PART_TITLE = "Description"
 const SECUND_PART_TITLE = "Reflective analysis"
@@ -40,7 +43,7 @@ const ActivityBody = (props) => {
       <Typography className={classes.description} variant="body1" align="left" gutterBottom> 
         {props.analysis}
         {props.addLink ? 
-          <a href={'https://github.com/Diomenios/game_jam_3.0'} target="_blank" rel="noopener noreferrer"> link. </a> :  
+          <a className={classes.href} href={'https://github.com/Diomenios/game_jam_3.0'} target="_blank" rel="noopener noreferrer"> link. </a> :  
           undefined
         }
       </Typography>
